@@ -17,7 +17,8 @@
                 extend: {
                     colors: {
                         primaryColor: 'var(--primary-color)',
-                        secondaryColor: 'var(--secondary-color)'
+                        secondaryColor: 'var(--secondary-color)',
+                        textColor: 'var(--text-color)',
                     }
                 }
             }
@@ -46,16 +47,49 @@
             </nav>
         </div> <!-- navbar-bg-color -->
         <div class="toggle-btns container mx-auto">
-           <div class="flex justify-center space-x-4 mt-20">
-            <button class="dbd-btn">Donation</button>
-            <button class="dbd-btn bg-white border-2 text-[#111111B3]">History</button>
-           </div>
+            <div class="flex justify-center space-x-4 mt-20">
+                <button class="dbd-btn">Donation</button>
+                <button class="dbd-btn bg-white border-2 text-[#111111B3]">History</button>
+            </div>
         </div><!-- toggle-btns -->
     </header>
     <main>
-        <section>
-            <div></div>
-        </section>
+        <section class="donation-wrapper">
+            <div class="container mx-auto">
+                <div class="card card-side flex-col md:flex-row shadow-xl border-2 gap-y-7 p-8 my-8">
+                    <figure class="basis-5/12">
+                        <img src="assets/noakhali.png"
+                            alt="Movie" />
+                    </figure>
+                    <div class="card-body basis-6/12 gap-3.5 p-0 md:p-8">
+                        <button class="btn w-full md:w-40 text-textColor">
+                            <img src="assets/coin.png" alt="">
+                            <span class="donated-amount">1050</span> BDT
+                            <!-- <div class="badge">+99</div> -->
+                        </button>
+                        <h2 class="card-title text-secondaryColor font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="leading-7">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide
+                        essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please
+                        join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                        <div class="card-actions flex-col gap-4">
+                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+                            <button class="dbd-btn w-full">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- donation-wrapper -->
+
+        <section class="history-wrapper">
+            <div class="container mx-auto">
+                <div class="card card-side flex-col md:flex-row shadow-xl border-2 gap-y-7 p-8 my-8">
+                    <div class="card-body basis-6/12 gap-3.5 p-0 md:p-8">
+                        <h2 class="card-title text-secondaryColor font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+                        <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- history-wrapper -->
     </main>
 </body>
 
