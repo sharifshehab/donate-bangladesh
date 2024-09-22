@@ -1,0 +1,86 @@
+/* Lexend - Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------- 
+  custom properties 
+--------------------*/
+:root {
+    --primary-color: #B4F461;
+    --secondary-color: #111111;
+    --text-color: #111111B3;
+}
+
+/*-------------------- 
+  preset properties 
+--------------------*/
+body {
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text-color);
+    background: none repeat scroll 0 0;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/*--------------------   
+  * REUSABLE SELECTION 
+---------------------*/
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 0.938em;
+}
+
+.dbd-btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/*--------------------- 
+     Media Query 
+---------------------*/
+/* Mobile */
+/* Checking Size: 400px */
+@media only screen and (max-width: 767px) {
+    .container {
+            padding: 0 0;
+        }
+    .dbd-btn {
+            padding: 12px 20px;
+            font-size: 1rem;
+        }
+}
+
+
