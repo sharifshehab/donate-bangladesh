@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -29,32 +29,30 @@
 </head>
 
 <body>
-    <header class="sticky top-0 z-10">
-        <div class="bg-[#F9F7F3] py-10">
-            <nav class="container mx-auto flex justify-between items-center">
-                <div class="blog">
-                    <a href="index.html"><button class="dbd-btn">Home</button></a>
-                </div><!-- blog -->
-                <div class="brand">
-                    <a href="#"
-                        class="flex flex-col md:flex-row items-center gap-3 font-semibold text-base md:text-xl text-secondaryColor"><img
-                            src="assets/logo.png" alt="">Donate Bangladesh</a>
-                </div><!-- brand -->
-                <div class="initial-amount-wrap flex items-center gap-2">
-                    <img src="assets/coin.png" alt="">
-                    <h4 class="text-base md:text-xl font-medium"><span id="initial-balance">5500</span>BDT</h4>
-                </div><!-- initial-amount-wrap -->
-            </nav>
-        </div> <!-- navbar-bg-color -->
-    </header>
+<header class="sticky top-0 z-10 pb-8" id="header">
+    <div class="bg-[#F9F7F3] py-10" id="header-bg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="blog">
+                <a href="index.html"><button class="dbd-btn">Home</button></a>
+            </div><!-- blog -->
+            <div class="brand">
+                <a href="#"
+                    class="flex flex-col md:flex-row items-center gap-3 font-semibold text-base md:text-xl text-secondaryColor"><img
+                        src="assets/logo.png" alt="">Donate Bangladesh</a>
+            </div><!-- brand -->
+            <div class="initial-amount-wrap flex items-center gap-2">
+                <img src="assets/coin.png" alt="">
+                <h4 class="text-base md:text-xl font-medium"><span id="initial-balance">5500</span>BDT</h4>
+            </div><!-- initial-amount-wrap -->
+        </nav>
+    </div> <!-- navbar-bg-color -->
+
+</header>
     <main>
         <section class="faq-wrapper py-7">
             <div class="container mx-auto">
                 <h1 class="text-5xl text-secondaryColor font-bold">Important FAQ</h1>
-
-
                 <div class="join join-vertical w-full mt-10">
-
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                         <input type="radio" name="my-accordion-4" checked="checked" />
                         <div class="collapse-title text-xl font-medium">
@@ -68,7 +66,6 @@
                             change how the page looks or behaves by modifying these nodes.</p>
                         </div>
                     </div>
-                    
                     <div class="collapse collapse-arrow join-item border-base-300 border">
                         <input type="radio" name="my-accordion-4" />
                         <div class="collapse-title text-xl font-medium">
@@ -118,8 +115,7 @@
                             style.cssText method</p>
                         </div>
                     </div>
-                  
-                </div>
+                </div><!-- join -->
             </div><!-- container -->
         </section><!-- faq-wrapper -->
     </main>

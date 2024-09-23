@@ -1,7 +1,5 @@
 const cards = document.getElementsByClassName('single-donation-card');
 for (const card of cards) {
-    // console.log(card.childNodes[3].childNodes[3].innerText);
-
     /* donation button */
     const donateButton = card.childNodes[3].childNodes[7].childNodes[3];
     
@@ -39,20 +37,26 @@ for (const card of cards) {
     });
 }
 
+/* toggle history button */
+toggleBtn('history', 'donation');
 
-document.getElementById('history').addEventListener('click', function (e) {
-    e.target.classList.remove('dbd-toggle');
-    document.getElementById('donation').classList.add('dbd-toggle');
+/* toggle donation button */
+toggleBtn('donation', 'history');
 
-    document.getElementById('history-wrapper').classList.remove('hidden');
-    document.getElementById('donation-wrapper').classList.add('hidden');
-});
 
-document.getElementById('donation').addEventListener('click', function (e) {
-    e.target.classList.remove('dbd-toggle');
-    document.getElementById('history').classList.add('dbd-toggle');
-   
-    document.getElementById('donation-wrapper').classList.remove('hidden');
-    document.getElementById('history-wrapper').classList.add('hidden');
-});
+/* header BG-color change on scroll */
+window.addEventListener('scroll', function () {
+    const header = document.getElementById('header');
+    const headerBgColor = document.getElementById('header-bg');
+
+    const scrollY = window.scrollY;
+    if (scrollY > 0) {
+        header.classList.add('backdrop-blur-md', 'bg-white/30');
+        headerBgColor.classList.remove('bg-[#F9F7F3]');
+    } else {
+        header.classList.remove('backdrop-blur-md', 'bg-white/30');
+        headerBgColor.classList.add('bg-[#F9F7F3]');
+    }
+})
+
 
