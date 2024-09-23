@@ -40,7 +40,6 @@ img {
   * REUSABLE SELECTION 
 ---------------------*/
 .dbd-btn {
-    padding: 12px 32px;
     border-radius: 8px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -55,17 +54,5 @@ img {
     border: 1px solid var(--text-color);
 }
 
-/*--------------------- 
-     Media Query 
----------------------*/
-/* Mobile */
-/* Checking Size: 400px */
-@media only screen and (max-width: 767px) {
-
-    .dbd-btn {
-            padding: 12px 20px;
-            font-size: 1rem;
-        }
-}
 
 

@@ -27,12 +27,13 @@ function getTransaction(donationAmount, donationName) {
 }
 
 /* toggle button class */
-function toggleBtn(history, donation) {
-    document.getElementById(history).addEventListener('click', function (e) {
+function toggleBtn(firstParameter, secondParameter) {
+    document.getElementById(firstParameter).addEventListener('click', function (e) {
         e.target.classList.remove('dbd-toggle');
-        document.getElementById(donation).classList.add('dbd-toggle');
+        document.getElementById(secondParameter).classList.add('dbd-toggle');
 
-        document.getElementById(`${history}-wrapper`).classList.remove('hidden');
-        document.getElementById(`${donation}-wrapper`).classList.add('hidden');
+        document.getElementById(`${firstParameter}-wrapper`).classList.remove('hidden');
+        document.getElementById(`${secondParameter}-wrapper`).classList.add('hidden');
     });
 }
+

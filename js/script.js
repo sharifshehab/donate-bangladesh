@@ -1,3 +1,4 @@
+
 const cards = document.getElementsByClassName('single-donation-card');
 for (const card of cards) {
     /* donation button */
@@ -13,7 +14,7 @@ for (const card of cards) {
 
         /* checking for invalid character, negative number, empty input and insufficient amount */
         if (isNaN(donationAmount.value) || donationAmount.value < 0 || donationAmount.value.trim() === '' || parseInt(initialBalance.innerText) < parseInt(donationAmount.value)) { 
-            return alert('Not a valid amount');
+            return alert('Invalid Donation Amount');
         }
 
         /* total collected donation */ 
@@ -37,14 +38,13 @@ for (const card of cards) {
     });
 }
 
-/* toggle history button */
+/* toggle history button color */
 toggleBtn('history', 'donation');
 
-/* toggle donation button */
+/* toggle donation button color */
 toggleBtn('donation', 'history');
 
-
-/* header BG-color change on scroll */
+/* change header BG-color on scroll */
 window.addEventListener('scroll', function () {
     const header = document.getElementById('header');
     const headerBgColor = document.getElementById('header-bg');

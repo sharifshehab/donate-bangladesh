@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh - blog</title>
-
+    <title>Blog || Donate Bangladesh</title>
+    <!-- For .ico format -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <!-- daisyUI CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- tailwind css -->
@@ -29,28 +30,28 @@
 </head>
 
 <body>
-<header class="sticky top-0 z-10 pb-8" id="header">
-    <div class="bg-[#F9F7F3] py-10" id="header-bg">
-        <nav class="container mx-auto flex justify-between items-center">
-            <div class="blog">
-                <a href="index.html"><button class="dbd-btn">Home</button></a>
-            </div><!-- blog -->
-            <div class="brand">
-                <a href="#"
-                    class="flex flex-col md:flex-row items-center gap-3 font-semibold text-base md:text-xl text-secondaryColor"><img
-                        src="assets/logo.png" alt="">Donate Bangladesh</a>
-            </div><!-- brand -->
-            <div class="initial-amount-wrap flex items-center gap-2">
-                <img src="assets/coin.png" alt="">
-                <h4 class="text-base md:text-xl font-medium"><span id="initial-balance">5500</span>BDT</h4>
-            </div><!-- initial-amount-wrap -->
-        </nav>
-    </div> <!-- navbar-bg-color -->
+    <header class="sticky top-0 z-10 pb-8" id="header">
+        <div class="bg-[#F9F7F3] py-10" id="header-bg">
+            <nav class="container px-3.5 mx-auto flex justify-between items-center">
+                <div class="blog">
+                    <a href="index.html"><button class="dbd-btn py-3 px-4 md:px-8">Home</button></a>
+                </div><!-- blog -->
+                <div class="brand">
+                    <a href="#"
+                        class="flex flex-col md:flex-row items-center gap-3 font-semibold text-base md:text-xl text-secondaryColor"><img
+                            src="assets/logo.png" alt="">Donate Bangladesh</a>
+                </div><!-- brand -->
+                <div class="initial-amount-wrap flex items-center gap-2">
+                    <img src="assets/coin.png" alt="">
+                    <h4 class="text-base md:text-xl font-medium"><span id="initial-balance">5500</span>BDT</h4>
+                </div><!-- initial-amount-wrap -->
+            </nav>
+        </div> <!-- navbar-bg-color -->
 
-</header>
+    </header>
     <main>
         <section class="faq-wrapper py-7">
-            <div class="container mx-auto">
+            <div class="container px-3.5 mx-auto">
                 <h1 class="text-5xl text-secondaryColor font-bold">Important FAQ</h1>
                 <div class="join join-vertical w-full mt-10">
                     <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -60,10 +61,13 @@
                                 (DOM)?</h2>
                         </div>
                         <div class="collapse-content">
-                            <p>The Document Object Model (DOM) is a programming interface that allows developers to interact and manipulate HTML and
-                            XML documents dynamically. It is a way for browsers to organize a webpage like a tree. Each part of the page, such as
-                            text, images, or buttons, is a "node" on this tree. With the DOM, we can use programming languages like JavaScript to
-                            change how the page looks or behaves by modifying these nodes.</p>
+                            <p>The Document Object Model (DOM) is a programming interface that allows developers to
+                                interact and manipulate HTML and
+                                XML documents dynamically. It is a way for browsers to organize a webpage like a tree.
+                                Each part of the page, such as
+                                text, images, or buttons, is a "node" on this tree. With the DOM, we can use programming
+                                languages like JavaScript to
+                                change how the page looks or behaves by modifying these nodes.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -73,10 +77,13 @@
                                 DOM?</h2>
                         </div>
                         <div class="collapse-content">
-                            <p>There are several ways to select an element from the dom. It depends on what we want to achieve. We can use
-                            getElementById() to select a specific item. If we want to get multiple items, getElementsByClassName() is suitable for
-                            getting items with the same class name and getElementsByTagName() to get items with the same tag name. We can also use
-                            querySelector() for single item and querySelectorAll() for multiple items.</p>
+                            <p>There are several ways to select an element from the dom. It depends on what we want to
+                                achieve. We can use
+                                getElementById() to select a specific item. If we want to get multiple items,
+                                getElementsByClassName() is suitable for
+                                getting items with the same class name and getElementsByTagName() to get items with the
+                                same tag name. We can also use
+                                querySelector() for single item and querySelectorAll() for multiple items.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -86,13 +93,18 @@
                                 of the DOM, and why is it useful?</h2>
                         </div>
                         <div class="collapse-content">
-                            <p>Instead of adding individual event listener to every child element, we can add an event listener to their parent
-                            element. Whenever a child element triggers an event, it goes up to the parent element. parent element catches it by
-                            checking the event’s target.
-                            <br>
-                            <br>
-                            when we are creating elements dynamically event delegation is very useful. By delegating the event to its parent, we can
-                            access all of the new and old elements from here. Making the code easy to handle and debug.</p>
+                            <p>Instead of adding individual event listener to every child element, we can add an event
+                                listener to their parent
+                                element. Whenever a child element triggers an event, it goes up to the parent element.
+                                parent element catches it by
+                                checking the event’s target.
+                                <br>
+                                <br>
+                                when we are creating elements dynamically event delegation is very useful. By delegating
+                                the event to its parent, we can
+                                access all of the new and old elements from here. Making the code easy to handle and
+                                debug.
+                            </p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border-base-300 border">
@@ -103,20 +115,24 @@
                             </h2>
                         </div>
                         <div class="collapse-content">
-                            <p>with getAttribute() method we can get the element's current attribute and with setAttribute() and removeAttribute() we can add
-                            or remove attribute from the element.
-                            <br>
-                            <br>
-                            we can add, remove and toggle class of an element with classList.add(), classList.remove() and classList.toggle()
-                            method.
-                            <br>
-                            <br>
-                            to apply a single style to an element we can use style.color/style.backgroundColor and for multiple styles we can use
-                            style.cssText method</p>
+                            <p>with getAttribute() method we can get the element's current attribute and with
+                                setAttribute() and removeAttribute() we can add
+                                or remove attribute from the element.
+                                <br>
+                                <br>
+                                we can add, remove and toggle class of an element with classList.add(),
+                                classList.remove() and classList.toggle()
+                                method.
+                                <br>
+                                <br>
+                                to apply a single style to an element we can use style.color/style.backgroundColor and
+                                for multiple styles we can use
+                                style.cssText method
+                            </p>
                         </div>
                     </div>
                 </div><!-- join -->
-            </div><!-- container -->
+            </div><!-- container px-3.5 -->
         </section><!-- faq-wrapper -->
     </main>
 </body>
