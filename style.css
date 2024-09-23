@@ -59,6 +59,12 @@ img {
     line-height: 25px;
     text-align: center;
 }
+.dbd-toggle {
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
 
 /*--------------------- 
      Media Query 
