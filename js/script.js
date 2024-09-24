@@ -51,10 +51,10 @@ window.addEventListener('scroll', function () {
 
     const scrollY = window.scrollY;
     if (scrollY > 0) {
-        header.classList.add('backdrop-blur-md', 'bg-white/30');
+        header.classList.add('backdrop-blur-md', 'border-b', 'bg-white/30');
         headerBgColor.classList.remove('bg-[#F9F7F3]');
     } else {
-        header.classList.remove('backdrop-blur-md', 'bg-white/30');
+        header.classList.remove('backdrop-blur-md', 'border-b', 'bg-white/30');
         headerBgColor.classList.add('bg-[#F9F7F3]');
     }
 })
